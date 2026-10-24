@@ -18,7 +18,7 @@
 # 🏆 GitHub Başarımları Rehberi
 
 GitHub profilindeki **tüm başarımların (achievements) ve rozetlerin** listesi, her birinin nasıl kazanıldığı,
-seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, tek sayfa.
+seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, komutlarıyla adım adım; kolay rozetleri 15 dakikada nasıl alacağın dahil.
 
 > [!NOTE]
 > Bu bir **topluluk rehberidir**, GitHub ile ilgisi yoktur. GitHub başarım kurallarını resmî olarak
@@ -28,6 +28,8 @@ seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, tek sayfa.
 ## 📋 İçindekiler
 
 - [Hızlı tablo](#-hızlı-tablo)
+- [Nereden başlamalı](#-nereden-başlamalı)
+- [Adım adım rehber](#-adım-adım-rehber)
 - [Seviyeli başarımlar](#-seviyeli-başarımlar)
 - [Tek seviyeli başarımlar](#-tek-seviyeli-başarımlar)
 - [Öne çıkan rozetler](#-öne-çıkan-rozetler-highlights)
@@ -46,6 +48,55 @@ seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, tek sayfa.
 | 💖 Public Sponsor | GitHub Sponsors ile birine sponsor ol | Para gerekir |
 | ⭐ Starstruck | Tek bir reponun 16 yıldıza ulaşsın | Zor, topluluk ister |
 | 🧠 Galaxy Brain | Discussions'ta 2 cevabın "kabul edilen cevap" seçilsin | Şu an belirsiz, aşağıya bak |
+
+## 🧭 Nereden başlamalı
+
+Kolaydan zora doğru sıra. İlk üçü yalnızca kendi reponla, yaklaşık 15 dakikada biter.
+
+| Sıra | Rozet | Neye ihtiyacın var | Süre |
+|---:|---|---|---|
+| 1 | ⚡ Quickdraw | Kendi reponda bir issue | 2 dk |
+| 2 | 🤠 YOLO | Kendi reponda review'suz merge | 5 dk |
+| 3 | 🦈 Pull Shark | 2 merge edilmiş PR | 10 dk |
+| 4 | 👥 Pair Extraordinaire | Birlikte çalıştığın biri | 10 dk |
+| 5 | 💖 Public Sponsor | Gerçek para (en az 1 dolar) | 5 dk |
+| 6 | 🧠 Galaxy Brain | Açık kaynakta gerçek yardım | Haftalar |
+| 7 | ⭐ Starstruck | 16 yıldız, yani insanlar | Haftalar, aylar |
+
+## 📖 Adım adım rehber
+
+Her sayfa kopyala-yapıştır komutlarla, kontrol listesiyle ve hataların çözümüyle gelir.
+
+| Sayfa | İçindekiler |
+|---|---|
+| [1. Hazırlık](docs/01-hazirlik.md) | Git ve `gh` kurulumu, giriş, profil ayarları, kurallar |
+| [2. Kolay üç rozet](docs/02-kolay-rozetler.md) | Quickdraw, YOLO ve Pull Shark: 15 dakikada, komutlarıyla |
+| [3. Pair Extraordinaire](docs/03-pair-extraordinaire.md) | `Co-authored-by` satırı, e-posta kimliği, doğru merge yöntemi |
+| [4. Public Sponsor](docs/04-public-sponsor.md) | GitHub Sponsors ile sponsor olma, iptal etme |
+| [5. Galaxy Brain](docs/05-galaxy-brain.md) | Discussions'ta kabul edilen cevap, bugünkü durum |
+| [6. Starstruck](docs/06-starstruck.md) | Repoyu keşfedilir yapma, nerede duyurulur |
+| [7. Seviye atlama](docs/07-seviye-atlama.md) | Bronz, gümüş, altın eşikleri ve dürüst yollar |
+| [8. Sorun giderme](docs/08-sorun-giderme.md) | Rozet görünmüyorsa kontrol listesi |
+
+### 🚀 15 dakikada ilk üç rozet (özet)
+
+```bash
+gh repo create calisma-defteri --public --add-readme --clone && cd calisma-defteri
+
+# ⚡ Quickdraw: issue aç, hemen kapat
+gh issue create --title "Çalışma günlüğü bölümü ekle" --body "README'ye günlük bölümü eklenecek."
+gh issue close 1
+
+# 🤠 YOLO + 🦈 Pull Shark (1. PR): review'suz merge
+git switch -c gunluk-bolumu
+printf '\n## Çalışma günlüğü\n\n- İlk kayıt.\n' >> README.md
+git commit -am "Çalışma günlüğü bölümü eklendi" && git push -u origin gunluk-bolumu
+gh pr create --fill && gh pr merge --squash --delete-branch
+git switch main && git pull
+# 🦈 2. PR için başka bir değişiklikle aynısını tekrarla
+```
+
+Ayrıntılar ve açıklamalar için [2. sayfaya](docs/02-kolay-rozetler.md) bak. Her PR gerçek bir değişiklik içersin.
 
 ## 🎚️ Seviyeli başarımlar
 
@@ -107,7 +158,7 @@ Kendi reponda ya da başka bir açık kaynak projenin Discussions bölümünde d
 
 > [!TIP]
 > Quickdraw ve YOLO aynı PR ile alınabilir: kendi reponda bir PR aç, hemen merge et.
-> Quickdraw için merge değil **kapatma** da sayılır, 5 dakika içinde bitir.
+> Quickdraw için en sorunsuz yol issue'yu açıp 5 dakika içinde **kapatmaktır**.
 
 ## ✨ Öne çıkan rozetler (Highlights)
 
