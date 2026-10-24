@@ -1,0 +1,137 @@
+# 🏆 GitHub Başarımları Rehberi
+
+GitHub profilindeki **tüm başarımların (achievements) ve rozetlerin** listesi, her birinin nasıl kazanıldığı,
+seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, tek sayfa.
+
+> [!NOTE]
+> Bu bir **topluluk rehberidir**, GitHub ile ilgisi yoktur. GitHub başarım kurallarını resmî olarak
+> yayımlamıyor; aşağıdaki bilgiler topluluk kaynaklarından derlendi ve zamanla değişebilir.
+> Son kontrol: 2026-10-24.
+
+## 📋 İçindekiler
+
+- [Hızlı tablo](#-hızlı-tablo)
+- [Seviyeli başarımlar](#-seviyeli-başarımlar)
+- [Tek seviyeli başarımlar](#-tek-seviyeli-başarımlar)
+- [Öne çıkan rozetler](#-öne-çıkan-rozetler-highlights)
+- [Artık kazanılamayanlar](#-artık-kazanılamayanlar)
+- [Bilmen gerekenler](#-bilmen-gerekenler)
+- [Kaynaklar](#-kaynaklar)
+
+## ⚡ Hızlı tablo
+
+| Başarım | Tek cümlede | Zorluk |
+|---|---|---|
+| 🦈 Pull Shark | 2 pull request'in merge edilsin | Kolay |
+| 🤠 YOLO | Review'suz bir PR'ı merge et | Çok kolay |
+| ⚡ Quickdraw | Bir issue/PR'ı açtıktan 5 dakika içinde kapat | Çok kolay |
+| 👥 Pair Extraordinaire | Co-author'lu bir commit'in olduğu PR merge edilsin | Kolay |
+| 💖 Public Sponsor | GitHub Sponsors ile birine sponsor ol | Para gerekir |
+| ⭐ Starstruck | Tek bir reponun 16 yıldıza ulaşsın | Zor, topluluk ister |
+| 🧠 Galaxy Brain | Discussions'ta 2 cevabın "kabul edilen cevap" seçilsin | Şu an belirsiz, aşağıya bak |
+
+## 🎚️ Seviyeli başarımlar
+
+Seviyeler: **Varsayılan → Bronz → Gümüş → Altın**. Sayılar ilgili sayaç eşiğidir.
+
+| Başarım | Neyi sayar | Varsayılan | Bronz | Gümüş | Altın |
+|---|---|---:|---:|---:|---:|
+| 🦈 **Pull Shark** | Merge edilen pull request | 2 | 16 | 128 | 1024 |
+| ⭐ **Starstruck** | Tek bir reponun yıldızı | 16 | 128 | 512 | 4096 |
+| 👥 **Pair Extraordinaire** | Co-author'lu commit içeren merge edilmiş PR | 1 | 10 | 24 | 48 |
+| 🧠 **Galaxy Brain** | Discussions'ta kabul edilen cevap | 2 | 8 | 16 | 32 |
+
+### 🦈 Pull Shark
+
+Açtığın pull request merge edilince sayaç artar. Kendi reponda açıp kendin merge etsen de sayılır.
+Başkasının reposuna katkı yapmak daha anlamlı ama şart değil.
+
+```bash
+git switch -c duzeltme
+# bir değişiklik yap
+git commit -am "Yazım hatası düzeltildi"
+git push -u origin duzeltme
+gh pr create --fill
+gh pr merge --squash
+```
+
+### 👥 Pair Extraordinaire
+
+Bir commit mesajının sonuna `Co-authored-by` satırı ekle, PR merge edilsin. Eş yazarın e-postası GitHub
+hesabına bağlı olmalı; GitHub'ın verdiği `ID+kullanici@users.noreply.github.com` adresi de olur.
+
+```text
+Özellik eklendi
+
+Co-authored-by: Ad Soyad <kullanici@example.com>
+```
+
+Gerçekten birlikte çalıştığın kişiyi yaz. Kimse ile çalışmadıysan bu başarımı atla.
+
+### ⭐ Starstruck
+
+Tek bir repo 16 yıldıza ulaşmalı. Yıldızlar toplanmaz, **en yüksek yıldızlı tek repo** sayılır.
+Yıldız almanın dürüst yolu repoyu işe yarar yapmak: iyi bir README, ekran görüntüsü, düzenli güncelleme,
+ilgili toplulukta paylaşım. Yıldız satın almak veya karşılıklı yıldız çetelerine girmek GitHub kurallarına aykırıdır.
+
+### 🧠 Galaxy Brain
+
+Bir Discussions başlığına cevap yazarsın ve soru sahibi ya da bakımcı bunu **cevap** olarak işaretler.
+Üçüncü taraf listelere göre bu başarım artık GitHub Community forumundaki cevaplarla kazanılamıyor.
+Kendi reponda ya da başka bir açık kaynak projenin Discussions bölümünde denemek gerekir.
+
+## 🎯 Tek seviyeli başarımlar
+
+| Başarım | Nasıl alınır |
+|---|---|
+| ⚡ **Quickdraw** | Bir issue veya PR'ı **açtıktan sonra 5 dakika içinde kapat**. Kendi reponda yeterli. |
+| 🤠 **YOLO** | Bir PR'ı **hiç review almadan merge et**. Kendi reponda branch protection yoksa direkt olur. |
+| 💖 **Public Sponsor** | Bir geliştiriciye veya projeye **GitHub Sponsors** üzerinden sponsor ol. Tek seferlik en düşük tutar yeterli. |
+
+> [!TIP]
+> Quickdraw ve YOLO aynı PR ile alınabilir: kendi reponda bir PR aç, hemen merge et.
+> Quickdraw için merge değil **kapatma** da sayılır, 5 dakika içinde bitir.
+
+## ✨ Öne çıkan rozetler (Highlights)
+
+Bunlar profilinde başarımlardan ayrı gösterilir.
+
+| Rozet | Nasıl alınır |
+|---|---|
+| **PRO** | GitHub Pro aboneliği (ücretli) |
+| **Developer Program Member** | GitHub Developer Program'a kayıt ol |
+| **Security Bug Bounty Hunter** | GitHub'ın güvenlik açığı ödül programı üzerinden açık bul ve bildir |
+| **Security Advisory Credit** | Bildirdiğin güvenlik tavsiyesi GitHub Advisory Database'e kabul edilsin |
+| **GitHub Campus Expert** | GitHub Campus Program'a başvur (öğrenciler için, dönemsel açılır) |
+| **GitHub Star** | GitHub'ın topluluk liderlerine verdiği program, başvuruyla ve seçilerek |
+
+## 🪦 Artık kazanılamayanlar
+
+| Başarım | Neydi | Durum |
+|---|---|---|
+| 🛰️ **Mars 2020 Helicopter Contributor** | Mars 2020 helikopter görevinde kullanılan bir repoya katkı | Kapandı |
+| 🧊 **Arctic Code Vault Contributor** | 2020 GitHub Arşiv Programı'ndaki bir repoya katkı | Kapandı |
+| ❤️ **Heart On Your Sleeve** | GitHub'da bir şeye ❤️ ile tepki vermek | Kazanılamıyor olarak listeleniyor |
+| 🧙 **Open Sourcerer** | Birden çok açık repoda merge edilmiş PR | Kazanılamıyor olarak listeleniyor |
+
+Son ikisinin eşikleri hiçbir kaynakta net değil ve GitHub bunları test aşamasında bırakmış görünüyor.
+
+## ⚠️ Bilmen gerekenler
+
+- ⏱️ Rozetin profilinde görünmesi **24 saate kadar** sürebilir.
+- 🔒 Özel repo katkıların sayılması için profil ayarlarında **"Private contributions"** açık olmalı.
+- 👁️ Başarımları gizlemek için: Profil → Düzenle → **Achievements** kutusunu kapat.
+- 🏳️ Quickdraw ve Starstruck rozetinin görünümü emoji ten rengi tercihine göre değişir.
+- 🚫 **Sahte hesap, spam PR, kendi hesapların arası yıldız/PR döngüsü** kurma. Başarım için başkasının reposunu
+  yormak GitHub kurallarına aykırıdır ve hesabın kısıtlanabilir. Kendi reponda yapılabilenler (Pull Shark, YOLO,
+  Quickdraw) sorunsuz; yıldız ve ortak çalışma gerektirenler gerçek olmalı.
+
+## 📚 Kaynaklar
+
+- [GitHub Community: ilk başarımlarım nasıl alınır?](https://github.com/orgs/community/discussions/179161)
+- [Tüm profil rozetleri ve başarımları listesi](https://gomzyakov.github.io/github-achievements/)
+- [drknzz/GitHub-Achievements: eşikler ve açıklamalar](https://github.com/drknzz/GitHub-Achievements)
+
+## 📄 Lisans
+
+[MIT](LICENSE)
