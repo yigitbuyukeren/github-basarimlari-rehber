@@ -77,6 +77,7 @@ Her sayfa kopyala-yapıştır komutlarla, kontrol listesiyle ve hataların çöz
 | [6. Starstruck](docs/06-starstruck.md) | Repoyu keşfedilir yapma, nerede duyurulur |
 | [7. Seviye atlama](docs/07-seviye-atlama.md) | Bronz, gümüş, altın eşikleri ve dürüst yollar |
 | [8. Sorun giderme](docs/08-sorun-giderme.md) | Rozet görünmüyorsa kontrol listesi |
+| [9. Sık sorulan sorular](docs/09-sss.md) | Gizleme, kaybetme, katkı grafiği ve diğer kısa cevaplar |
 
 ### 🚀 15 dakikada ilk üç rozet (özet)
 
