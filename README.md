@@ -1,3 +1,20 @@
+<a href="#-hızlı-tablo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/banner-dark.jpg">
+    <img src="images/banner-light.jpg" width="100%" alt="GitHub Başarımları Rehberi: tüm başarımlar ve rozetler, seviye eşikleri ve nasıl kazanılacağı.">
+  </picture>
+</a>
+
+<div align="center">
+
+**[⚡ Hızlı tablo](#-hızlı-tablo)** &nbsp;·&nbsp; **[🎚️ Seviyeler](#-seviyeli-başarımlar)** &nbsp;·&nbsp; **[✨ Rozetler](#-öne-çıkan-rozetler-highlights)** &nbsp;·&nbsp; **[⚠️ Bilmen gerekenler](#-bilmen-gerekenler)**
+
+[![Lisans: MIT](https://img.shields.io/badge/lisans-MIT-E8480C?style=flat-square&labelColor=16150F)](LICENSE)
+![Dil](https://img.shields.io/badge/dil-T%C3%BCrk%C3%A7e-E8480C?style=flat-square&labelColor=16150F)
+[![Son güncelleme](https://img.shields.io/github/last-commit/yigitbuyukeren/github-basarimlari-rehber?style=flat-square&labelColor=16150F&color=E8480C&label=son%20g%C3%BCncelleme)](https://github.com/yigitbuyukeren/github-basarimlari-rehber/commits/main)
+
+</div>
+
 # 🏆 GitHub Başarımları Rehberi
 
 GitHub profilindeki **tüm başarımların (achievements) ve rozetlerin** listesi, her birinin nasıl kazanıldığı,
