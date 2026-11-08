@@ -14,7 +14,7 @@ Rehberdeki bir bilgi eskidiyse ya da yanlışsa katkın çok değerli.
 1. Repoyu fork'la ve bir branch aç.
 2. Değişikliği yap. Türkçe yaz, mevcut sayfaların sade dilini koru.
 3. Bir bilgiyi değiştiriyorsan kaynağı PR açıklamasına ekle.
-4. Değişen sayfadaki bağlantıları ve görselleri kontrol et; boşluk hataları için `git diff --check` çalıştır.
+4. `python3 tools/check_links.py` ile yerel Markdown bağlantılarını, ayrıca değişen sayfadaki dış bağlantıları ve görselleri kontrol et; boşluk hataları için `git diff --check` çalıştır.
 5. PR gönder.
 
 ## Yapılmaması gerekenler
