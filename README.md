@@ -25,6 +25,8 @@ seviye eşikleri ve hangilerinin artık kazanılamadığı. Türkçe, komutları
 > yayımlamıyor; aşağıdaki bilgiler topluluk kaynaklarından derlendi ve zamanla değişebilir.
 > Son kontrol: 2026-10-24.
 
+> Durum notu (6 Kasım 2026): GitHub rozet eşikleri ve arayüz davranışları bu yerel belge kontrolünde dış hizmetten yeniden doğrulanmadı. Tablolar rehberin önceki kaynak kayıtlarıdır; rozet kazanımı veya süre garantisi değildir. Güncel resmi kaynaklar önceliklidir.
+
 ## 📋 İçindekiler
 
 - [Hızlı tablo](#-hızlı-tablo)
